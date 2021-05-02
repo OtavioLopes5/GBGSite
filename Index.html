@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" type="imagem/png" href="img/icon.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GBG - Games By Gamers</title>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="divprefer flex">
+                <img src="img/imgpricipal.png" alt="Imagem principal" class="imgprincipal">
+                <div class="info">
+                    <p class="">Já pensou em fazer seus próprios personagens 3D?</p>
+                    <h1>Semana GBG de Criação 3D</h1>
+                    <p>Aprenda de forma definitiva a criar seus personagens 3D de <b>forma rápida e eficaz</b>.</p>
+                    <p>Uma Semana inteira de aprendizagem!</p>
+                    <b>De 3 a 08 de maio ✔</b>
+                    <p class="lastp">Gratuito, 100% online e com <u>CERTIFICADO</u></p>
+                    <span onclick="onOff()" class="button">INSCREVA-SE</span>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <div id="modal" class="hide">
+        <div class="content">
+            <h1>Deixe seu melhor e-mail abaixo para participar:</h1>
+            <form action="/" method="POST" onsubmit="return checkFields(event)">
+                <div>
+                    <label>Nome</label>
+                    <br>
+                    <input type="text" name="title">
+                </div>
+                <div >
+                    <label>Sobrenome</label>
+                    <br>
+                    <input type="text" name="category">
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <br>
+                    <input type="email" name="image">
+                </div>
+            
+                <div>
+                    <label>Celular (Opcional)</label>
+                    <br>
+                    <input type="tel" name="link">
+                </div>
+                <div>
+                    <p class="aten">Ao clicar no botão, você concorda com nossos <a href="#" class="">Termos de Uso</a> e <a href="#">Política de Privacidade</a>, incluindo o uso de cookies e o envio de comunicações.</p>
+                </div>
+                    <a href="#" class="linkmodal" onclick="onOff()">Voltar</a>
+                    <a class="salvar linkmodal">Salvar</a>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="logoimg"><img src="/Site/img/logoname.png" alt="logo gbg" class="imgfooter"></div>
+        <div class="footer-size">
+            <div >
+                <p>Games By Gamers © 2021. Alguns direitos reservados.</p>
+                <p> Você pode cancelar sua inscrição a qualquer momento. Ao se cadastrar você está concordando com os termos de nossa Política de Privacidade e Termos de Uso. </p>
+            </div>
+            <div>
+                <a href="">Termos de Uso</a>
+                <br>
+                <a href="">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+    <script src="jscript/script.js"></script>
+</body>
+</html>

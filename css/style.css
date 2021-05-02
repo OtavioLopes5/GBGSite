@@ -1,0 +1,292 @@
+:root {
+    --background: #121317;
+    --bgFooter: #1F1E04;
+    --white: #ffffff;
+    --rcolor: #BB2020;
+    --ycolor: #F2CB05;
+    --fcolor: #646464;
+}
+
+body {
+    
+    background-color: var(--background);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+}
+
+p b h1 u {
+    letter-spacing: 1.5rem;
+    font-size: 1.6em;
+    line-height: 1.35em;
+}
+
+
+h1 {
+    color: var(--ycolor);
+    text-shadow: 2px 2px 6px #ffea4d60;
+}
+
+footer {
+    width: 100%;
+    background-image: url(/Site/img/cscortadoeditado.png);
+    background-size: 90vh ;
+    background-position: right;
+    background-repeat: no-repeat;
+
+    margin-top: 30px;
+}
+
+a{ 
+    color: var(--fcolor);
+}
+
+
+.button {
+    color: black;
+    font-weight: 700;
+    height: 50px;
+    margin: 1em auto;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    padding: 10px 50px;
+    
+}
+
+.imgprincipal {
+    min-width: 200px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.button  {
+    background: var(--ycolor);
+    background: linear-gradient(90deg, hsl(56, 87%, 60%) 0%, hsl(50, 96%, 48%) 100%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px   15px var(--ycolor);
+    background: linear-gradient(90deg, hsl(50, 96%, 48%) 100%, hsl(56, 87%, 60%) 0%);
+}
+
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+    /* z-index: 1; */
+    font-size: 1.2em;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    padding: 3%;
+    width: 700px;
+    min-width: 300px;
+
+}
+
+.lastp {
+    margin-bottom: 1.5em;
+    color: var(--rcolor);
+    font-weight: 700;
+}
+
+.logoimg {
+    width: 250px;
+    margin: 0 auto 22px;
+
+
+}
+
+.imgfooter {
+    width: 250px;
+}
+
+.footer-size {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 200;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    color: var(--fcolor);
+    font-size: 0.7em;
+}
+
+/* MODAL */
+
+#modal {
+    background: var(--background);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: 300ms;
+}
+
+
+#modal .content {
+    margin-top: 5%;
+    color: white;
+}
+
+#modal .content h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal form{
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+}
+
+#modal.addScrool{
+    overflow: auto;
+}
+
+.content form div:nth-child(3),
+.content form div:nth-child(4),
+.content form div:nth-child(5){
+    grid-column: span 2;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid rgba(141, 25, 52, 0.3);
+    outline: none;
+    font-size: 16px;
+}
+
+form label {
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.8px;
+}
+
+.linkmodal{
+    width: 150px;
+    height: 40px;
+    background-color: #ffffff22;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    align-self: end ;
+    transition: 300ms;
+}
+
+.linkmodal:hover{
+    background: var(--white);
+    color: var(--rcolor);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.salvar {
+    grid-column: 2;
+    align-self: end ;
+    justify-self: end;
+    background-color: yellow;
+    color: var(--background);
+}
+
+
+#modal.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.aten {
+    font-size: 0.8em;
+    color: var(--fcolor);
+    text-align: center;
+}
+
+@media only screen and (max-width: 850px){
+
+
+
+    #modal form{
+        padding-bottom: 40px;      
+        grid-column: span 2;
+        align-self: start ;
+        justify-self: start;
+    }
+
+    .linkmodal {
+        width: 100%;
+        grid-column: span 2;
+        align-self: start ;
+        justify-self: start;
+    }
+   
+
+}
+/* 
+@media only screen and (max-width: 460px){
+    form input {
+        width: 71%;
+
+    }
+    .aten{
+        width: 71%;
+    }
+    
+
+} */
+
+
+/* fimodal */
+
+
+@media only screen and (min-width: 1920px){
+    .container {
+        max-width: 1500px;
+    }
+}
+
+@media only screen and (max-width: 1399px){
+    .info {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .footer-size{
+        width: 80%;
+        padding-top: 20px;
+    }
+
+    footer a{
+        padding-bottom: 50px;
+    }
+
+    label {
+        font-size: 0.8em;
+    }
+
+}
+
+
